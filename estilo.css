@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@200;300&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel:wght@400;500;600&family=Festive&family=Fira+Sans:wght@300;400;500;600&family=Gelasio:wght@400;500;700&family=Henny+Penny&family=Hubballi&family=Inspiration&family=Jacques+Francois+Shadow&family=Lato:ital,wght@0,300;1,700&family=Lavishly+Yours&family=Monofett&family=Mystery+Quest&family=Nunito:wght@500;700;900&family=Open+Sans:wght@400;500;600&family=Playfair+Display+SC:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Quattrocento&family=Righteous&family=Sarala:wght@400;700&family=Satisfy&family=Water+Brush&display=swap');
+
+    
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0px auto;
+        background-image: url(img/astronaut-removebg-preview.png);
+        background-position: 100% 0px;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    
+.astronaut{
+    position: relative;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0px auto;
+        background-image: url(img/astronaut-removebg-preview.png);
+        background-size: 600px;
+        background-position: 100% 0px;
+        background-repeat: no-repeat;
+        animation: animate-astronaut linear 25s infinite;
+        z-index: -1;
+}
+@keyframes animate-astronaut {
+    from {background-position: 80% 30px;}
+    to { background-position: 0px -80px;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;   
+    background-color: rgba(255, 255, 255, 0.902);
+    color: #fff;
+}
+.max-width{
+    /*max-width: 1300px;*/
+    padding: 0 120px;
+    margin: auto;
+    max-width: 100vw;
+}
+/*Barra de navegação*/
+.navbar{
+    font-family: 'Lora';
+    /*background-color: #1b1322;*/
+    background-color: #020310;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo-fatec a{
+    color: rgb(225, 33, 33);
+    text-shadow: 1px 1px 1px #111;
+    font-size: 30px;
+    font-weight: 500px;
+    font-family: 'Lora';
+}
+.navbar .logo-fatec a span{
+    font-size: 28px;
+    color: #dddddf;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #e99b2e;
+}
+
+.slide-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+/**** CONFIGURAÇÃO-PADRÃO****/
+section{
+    padding: 50px 0;
+}
+.texto-padrao{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px; 
+    line-height: 1.4em;
+    color: #020310;
+}
+
+.titulo-padrao{
+    font-size: 50px;
+    color: #151115;
+    font-family: 'Noto Sans', sans-serif;  
+}  
+
+.social-media, .social-media-content, .nft, .nft-content,  .filmes, .container-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+/*seção banners - home*/
+.container-banners{
+    position: relative;
+}
+
+.container-banners .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 100px;
+}
+
+.container-banners .slide-container .slide .content-slide {
+    flex: 1 1 350px;
+    /*animation: slideContent .4s linear .4s backwards;*/
+}
+
+@keyframes slideContent{
+    0% {
+    opacity: 0;
+    transform: translateX(-50px);
+    }
+}
+
+/*Titulos dos banners*/
+.container-banners .slide-container .slide .content-slide h3{
+    padding-top: 30%;
+    font-size: 60px;
+    color: #f47442;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.12em;
+
+}
+
+.container-banners .slide-container .slide .content-slide h4{
+    font-size: 35px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.8em;
+    width: 800px;
+    height: 10%;
+    padding-bottom: 20px;
+}
+
+.container-banners .slide-container .slide .content-slide .btn-slide {
+    margin-top: 10px;
+    display: inline-block;
+    background: darkviolet;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.container-banners .slide-container .slide .content-slide .btn-slide:hover{
+    background: rgba(194, 147, 214, 0.45);
+    border: 2px solid #a355d7;
+    color: #ffffff;
+}
+
+.container-banners .slide-container{
+    display: none;
+}
+
+.container-banners .slide-container.active{
+    display: block;
+}
+.container-banners .slide-container .slide #video {    
+        position: absolute; 
+        right: 0; 
+        min-width: 100%; 
+        min-height: 100%;
+        width: 100vw; 
+        height: auto; 
+        z-index: -1000;
+        background: url(img/metaverso.jpg) no-repeat;
+        background-size: cover; 
+    
+}
+#video1{
+    width: 300px;
+    height: 400px;
+}
+
+.container-banners .slide-container:nth-child(1) .slide{
+    background: url(img/space-background-2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*QUEM SOMOS CONFIGURAÇÕES*/
+.quem-somos{
+    padding: 20px;
+    margin: 70px;
+    background: #020310a2;
+    border-radius: 10px;
+    width: fit-content;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.quem-somos h1{
+    font-family: 'Lora';
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.quem-somos h2{
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: space-between;
+  
+}
+.quem-somos p{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: -2px;
+}
+.quem-somos .paragrafo-destaque{
+   padding-top: 35px;
+    font-size: 22px;
+    font-family: 'Lora';
+    font-weight: bold;  
+    margin-bottom: -25px;
+}
+
+.quem-somos a{
+    color: white;
+    transition: color 0.3s ease;
+    display: inline-block;
+    
+}
+
+.quem-somos a:hover{
+    color: #c55c1a;
+    transition: color 0.3s ease;
+}
+
+.container-banners .slide-container:nth-child(2) .slide{
+    background: url(img/vi.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.container-banners .slide-container:nth-child(3) .slide{
+    background: url(img/nft-banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.container-banners #prev, 
+.container-banners #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: #a355d7;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.container-banners #prev:hover, 
+.container-banners #next:hover{
+    background: #a355d761;
+}
+.container-banners #prev{
+    left: 20px;
+}
+
+.container-banners #next{
+    right: 20px;
+}
+
+@media(max-width: 500px){
+    .container-banners #prev{
+        left: 0px;
+        top: 60%;
+    }
+
+    .container-banners #next{
+        right: 0px;
+        top: 60%;
+    }
+
+    .container-banners .slide-container .slide .content-slide p{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+    
+    }
+}
+
+
+/*estilo para vídeos de slides do canvas*/
+.slides-canvas .max-width{
+    width: 100%;
+    margin-bottom: 0;
+    height: 100%;
+}
+.slides-canvas video{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*estilo padrão p/citações do livro*/
+.quote-book {
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #240c2f;*/
+}
+
+.quote-book .citacao-livro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    gap: 50px;
+    
+}
+.quote-book .citacao-livro h2{
+    text-align: center;
+    font-size: 40px ;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: rgb(24, 22, 35);
+}
+.quote-book .citacao-livro span{
+    color: #c8554c;
+}
+.quote-book .citacao-livro p {
+    text-align: center;
+    font-size: 28px;
+}
+
+.play {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(31, 25, 25);
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.play img {
+    width: 70px;
+    padding-right: 10px;
+  
+}
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+.trailer video {
+    max-width: 1100px;
+    outline: none;
+}
+
+.trailer .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+
+}
+
+/*seção tópico 2 cap.5*/
+.container-topico-2{
+    margin-top: 0;
+    width: 100vw;
+    height: 80vh;
+    
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esquerda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;
+        
+}
+.esquerda p{
+    width: 700px;
+    text-align: justify;
+    margin-top: 100px;     
+    margin-bottom: 100px; 
+}
+.esquerda h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #c8554c;
+}
+.esquerda li{  
+    font-weight: 300;    
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;   
+}
+.direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.video-conectados{   
+    width: 700px;
+    height: 400px;
+    position: relative;  
+}
+#teste{
+    width: 700px;
+    height: 400px;
+}
+
+
+/*seção tópico 3 do cap.5*/
+.container-linguagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020310;
+    height: 90vh;
+    margin-top: 0;   
+}
+.container-linguagens .topicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    flex-direction: column;
+}
+.container-linguagens h2{
+   padding-bottom: 15px;
+    font-size: 35px;
+}
+.container-linguagens h1{
+    font-weight: 400;
+    color: #e2bcf8;
+    padding-bottom: 20px;
+}
+.container-midia {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-midia .card-midia {
+    border-radius: 6px;
+    border: 1px solid rgb(202, 158, 252);
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #c55c1a;
+}
+.container-midia .card-midia img{
+    width: 400px;
+    height: 500px;
+}
+.container-midia .card-midia span{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.75;
+    background-color: #ec9b78;
+    z-index: 1;
+    transition: width 0.5s, height 0.5s;
+}
+.container-midia .card-midia:hover span{
+    width: 1000px;
+    height: 1000px;
+}
+.container-midia .card-midia .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-midia .card-midia .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-midia .card-midia .content-midia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container-midia .card-midia .content-midia div {
+    padding: 40px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+.container-midia .card-midia:hover .content-midia div {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
+
+/*seção sobre tópico 4, cap. 5 - formações psicossociais*/
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+   
+}
+.social-media .social-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 100%;
+    width: 100%;
+}
+.social-media .social-content .left-social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding-left: 100px;
+}
+.social-media .social-content .left-social-media h2{
+    width: 400px;
+    color: #111;
+     padding-bottom: 20px;
+     font-size: 45px;
+}
+.social-media .social-content .left-social-media span{
+    color: rgb(174, 46, 6);
+}
+.social-media .social-content .left-social-media p{
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.social-media .social-content .right-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.social-media .social-content .right-social-media  h1{
+    font-size: 50px;
+    color: red;
+    background-color: #fff;
+    border: 2px solid rgb(84, 68, 68);
+    width: 500px;
+    height: 80px;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.social-media .social-content .right-social-media .typing-effect span{
+    color: rgb(74, 67, 67);
+    font-size: 35px;
+    font-family: 'Lato';   
+    padding-top: 10px;
+}
+
+.social-media .social-content .right-social-media img {
+    position: relative;
+    height: 450px;
+}
+
+
+/*  seção footer  */
+footer{
+    background: #111;
+    padding: 20px ;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+}
+
+footer span a{
+    color: #4e3488;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/******CAPÍTULO 6*******/
+.banner-cap-6{
+    display: flex;
+    height: 50vh;
+    width: 100%;    
+    background: url(img/pexels-uzunov-rostislav-10458835.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.banner-cap-6 h1{
+    font-weight: bolder;
+    padding-left: 20px;
+    text-align: center;
+   
+}
+.cap6-top1{
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cap6-top1 h1{
+    padding-bottom: 40px;
+}
+.cap6-top1, .cap6-top2, .cap6-top3 p{
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    
+}
+
+.web-arte{
+    background: #953bd16a;
+    background: url(img/pexels-uzunov-rostislav-10458835.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: -10px;
+    padding:-10px;
+    color: white;
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.12em;
+    
+   
+}
+#videonft {
+    margin: 30px;
+    padding: 10px;
+    max-width: 1100px;
+    outline: none;
+    
+}
+
+#videonft .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+
+}
+
+ /*estilo para exemplos de NFTs*/
+ .container-nft {
+    display: flex;
+    width: 100%;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    height: 60vh;
+  }
+  
+  .box-nft {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 1.2%;
+    line-height: 0;
+    border-radius: 8px;
+  }
+  .box-nft img {
+    width: 200%;
+    height: 100% ;
+    object-fit: cover; 
+    transition: .5s;
+  }
+    
+  .box-nft:hover { flex: 1 1 30%; }
+  .box-nft:hover  img {
+    width: 100%;
+    height: 100%;
+  }
+.nft .max-width{    
+    width: 100%;
+    margin: auto 0 auto 20px;
+}
+.nft .nft-content .left{
+    width: 60%;
+}
+.nft .nft-content .right{
+    margin-right: -60px;
+    width: 40%;
+}
+.nft .nft-content .right .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.nft .nft-content .right p{
+    text-align: justify;  
+    line-height: 1.3em;
+}
+
+.nft .nft-content .left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/*seção filmes*/
+
+.filmes{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: #8282af;
+}
+.filmes-title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.container-filmes{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-filmes .card{
+    position: relative;
+    width: 350px;
+    height: 520px;
+    background-color: #111;
+    margin: 12px;
+    border: 1px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.container-filmes .card img{
+    transition: 0.5s;   
+    width: 350px;
+    height: 440px;
+}
+.container-filmes .card h1{
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #e6e6f3;
+    font-family: 'Fira Sans', sans serif;
+    font-weight: 400;
+}
+.container-filmes .card a{
+   color: #a355d7;
+}
+.container-filmes .card:hover{
+    background-color: rgb(199, 73, 41);
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #8282af;
+    border-color:  #fafafc;
+}
+#video-monet{
+    width: 350px;
+    height: 440px;
+}
+/*
+.ultimo-slide-canvas{
+    max-height: 450;
+    background: #e99b2e;
+    margin-bottom: -10px;
+}
+*/
